@@ -1,0 +1,126 @@
+@media screen and (min-width:0) and (max-width: 768px){
+    header{
+        padding: 10%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu__burguer{
+        padding-left: 120px;
+        width: 25px;
+        cursor: pointer;
+    }
+    .menu__burguer:hover{
+        color: white;
+    }
+    .header__div2 {
+        display: none;
+    }
+    .conteudo-img{
+        display: none;
+    }
+        
+    .header__menu-item-mobile:hover{
+        background-color: #c7c6c5;
+    }
+
+    .conteudo__secundario-p{
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        padding: 8%;
+
+    }
+
+    .footer-img-item{
+        width: 47%;
+        padding-top: 10%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .footer-p {
+        font-size: 10px;
+    
+    }
+    
+    
+
+}
+
+
+
+.conteudo__principal{
+    align-items: center;
+    display: flex;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.conteudo__principal-titulo{
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+    padding-bottom: 5%;
+
+}
+.conteudo__principal-p{
+    align-items: center;
+    color: gray;
+    display: flex;
+    padding-bottom: 5%;
+    font-size: 14px;
+}
+.conteudo__principal-div1{
+    margin-left: 7%;
+    padding-left: 4%;
+
+}
+.conteudo__principal-buttom{
+    background-color: #1C3319;
+    border-style: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 1em;
+    border-radius: 3px;
+    text-decoration: none;
+}   
+
+.conteudo-img {
+    display: flex;
+    width: 50%;
+    padding-left: 10%;
+    margin-left: 17%;
+}
+
+   
+
+
+.conteudo__secundario{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 7%;
+    padding-left: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.conteudo__secundario-img{
+    padding-left: 1%;
+}
+.footer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+
+.footer-img-item{
+    width: 22%;
+    padding-top: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+}

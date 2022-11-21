@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css"> 
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <img class="nav-logo" src="./Assets/Logo.svg" alt="logo">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Challennges</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resource</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Other Links</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div class="header__div2">
+            <a class="header__menu-item" href="#">Sign in</a>
+            <button class="header__buttom">Try for free</button>
+        </div>
+    </header>
+    <main>
+        <section class="conteudo__principal">
+            <div class="conteudo__principal-div1">
+                <h1 class="conteudo__principal-titulo">Ondeck is your remote<br><span style="color: #EDB63E;">conference calling tool</span></h1>
+                <p class="conteudo__principal-p">Ondeck is a service that allows you to creat beautiful, online, and encrypted video calls for you and your remote team.</p>
+                <button class="conteudo__principal-buttom">Try for free</button>
+            </div>
+            <div class="conteudo__principal-div2">
+                <img class="conteudo-img" src="./Assets/Hero Image.png" alt="">
+            </div>
+        </section>
+        <section class="conteudo__secundario">
+            <div>
+                <p class="conteudo__secundario-p">5.0 Rating based on reviews from:</p>
+            </div>
+            <div class="conteudo__secundario-img">
+                <img src="./Assets/Capterra Logo.svg" alt="">
+                <img src="./Assets/AlternativeTo Logo.svg" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <div>
+                <p class="footer-p">Trusted by 3+ million people at companies like</p>
+            </div>
+            <div class="footer-img">
+                <img class="footer-img-item" src="./Assets/Netflix Logo.svg" alt="">
+                <img class="footer-img-item" src="./Assets/Shopify Logo.svg" alt="">
+                <img class="footer-img-item" src="./Assets/Spotify Logo.svg" alt="">
+                <img class="footer-img-item" src="./Assets/Walmart Logo.svg" alt="">
+            </div>
+        </section>
+    </footer>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu)
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+    </script>
+</body>
+</html>
