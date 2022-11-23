@@ -135,10 +135,8 @@ a {
     align-items: center;
     display: flex;
     flex-direction: row;
-    margin-left: 7%;
-    padding-left: 4%;
-    padding-top: 3%;
-    padding-bottom: 5%;
+    margin-left: 5%;
+    padding: 0 0 5% 4% ;
 }
 .conteudo__secundario-img{
     padding-left: 1%;
@@ -147,23 +145,80 @@ a {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     padding: 8%;
+}
+
+.footer-img{
+    display: flex;
+    justify-content: center;
+    padding: 5% 0 0 0;
+
 }
 
 .footer-img-item{
     width: 20%;
-    padding-top: 5%;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding: 0 2% 0 2%;
 }
 
 /* Media Query for mobile first */
 
+@media only screen and (max-width: 469px){
+    body{
+        margin-top: 7%;
+    }
+
+    .conteudo__principal{
+        padding-top: 20%;
+    }
+
+    .conteudo-img{
+        width: 65%;
+        justify-content: space-between;
+    }
+
+    .conteudo__principal-buttom{
+        font-size: 13px;
+        padding: 1em;
+    }
+
+    .conteudo__secundario{
+        justify-content: center;
+        margin: 10% 0 0 0;
+    }
+
+    .footer-p{
+        font-size: 80%;
+    }
+
+    .footer-img{
+        flex-direction: row;
+        margin: 5% 0 0 0;
+    }
+
+    .footer{
+        margin: 10% 0 0 0;
+        padding: 0;
+    }
+    
+}
+
 @media only screen and (max-width: 800px){
     body{
-        margin-top: 4%;
+        margin-top: 5%;
     }
+
+    header{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5% 0 6%;
+        padding: 3%;
+    }
+
+    .nav-logo{
+        margin-left: 5%;
+    }
+    
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -197,19 +252,30 @@ a {
         opacity: 0;
     }
 
-    header{
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 5% 0 6%;
-        padding: 3%;
-    }
-
-
 
     .conteudo__principal-titulo{
-        font-size: 200%;
+        font-size: 170%;
     }
+
+    .conteudo__secundario{
+        justify-content: center;
+        margin: 10% 0 0 0;
+    }
+
+    .footer-p{
+        font-size: 80%;
+    }
+
+    .footer-img{
+        flex-direction: row;
+        margin: 5% 0 0 0;
+    }
+
+    .footer{
+        margin: 10% 0 0 0;
+        padding: 0;
+    }
+
 }
 
 @media only screen and (max-width: 1000px){
