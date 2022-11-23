@@ -10,7 +10,7 @@ header{
     align-items: center;
     border-bottom: 1rem 1.5rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 5%;
 }
 
@@ -22,7 +22,7 @@ header{
 
 .nav-logo{
     padding-right: 5%;
-    margin-right: 2rem;
+    margin-right: 2.0rem;
 }
 
 li {
@@ -54,6 +54,8 @@ a {
 
 .header__menu-item{
     color: gray;
+    padding: 0 10px 0 10px;
+    padding-right: 10px;
 }
 
 .header__buttom{
@@ -158,11 +160,14 @@ a {
 
 /* Media Query for mobile first */
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 800px){
+    body{
+        margin-top: 4%;
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 3rem;
+        top: 9rem;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
@@ -182,6 +187,7 @@ a {
     .hamburger {
         display: block;
         cursor: pointer;
+        margin-left: 55%;
     }
 
     .header__menu-item, .header__buttom {
@@ -190,6 +196,43 @@ a {
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
+
+    header{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5% 0 6%;
+        padding: 3%;
+    }
+
+
+
+    .conteudo__principal-titulo{
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+
+    header{
+        padding-top: 10%;
+    }
+    .nav-logo{
+        padding-right: 2%;
+        margin-right: 0.5rem;
+    }
+
+    .nav-item {
+        margin-left: 0.8rem;
+    }
+
+    .header__buttom{
+        font-size: 13px;
+        padding: 0.8em;
+    }
+    
+    
+    
     
 }
 
